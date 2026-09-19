@@ -2,6 +2,16 @@ body{
     font-family: Arial;
     width: 80%;
     margin: auto;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #d9eaf2 20%,
+        #87ceeb 40%,
+        #f2e3d5 65%,
+        #a8a0a5 82%,
+        #1a1a1a 100%
+    );
+    color: black;
 
 }
 nav{
