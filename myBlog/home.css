@@ -1,3 +1,8 @@
+/*global*/
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial;
     width: 80%;
@@ -12,6 +17,8 @@ body{
         #1a1a1a 100%
     );
     color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
 }
 nav{
@@ -25,9 +32,6 @@ a{
 img{
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 footer{
     text-align: center;
@@ -50,7 +54,20 @@ h1{
     background-color: orange;
     padding: 10px;
 }
-
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
 /*main*/
 .lg-text{
     font-size: 50px;
@@ -70,6 +87,56 @@ h1{
     font-size: 14px;
     color: black;
     text-indent: 40px;
+}
+/*gallery*/
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.art1{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    border: 2px white;
+    padding: 10px;
+}
+.art1 img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.arttext1{
+    margin-left: 5px;
+    flex: 1;
+}
+.art2{
+    width: fit-content;
+    align-self: center;
+}
+.art3{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    border: 2px white;
+    padding: 10px;
+}
+.art3 img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+article{
+    background-color: white;
+    padding: 10px;
+    border-width: auto;
+    border-radius: 10px;
 }
 footer{
     background-color: #1a1a1a;
